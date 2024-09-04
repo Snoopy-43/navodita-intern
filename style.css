@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(spices.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+  border-bottom: 7px solid #535251;
+}
+
+.navbar {
+  background-color: rgba(61, 56, 56, 0.6) !important;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.navbar a {
+  color: rgb(
+    235,
+    231,
+    12
+  ) !important; /* Ensure links in the navbar are white */
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: white; /* Ensure the toggle icon is visible */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-brand p {
+  margin: 0;
+  font-size: 35px;
+}
+.container {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin-top: 180px;
+  padding-left: 750px;
+}
+h1 {
+  color: white;
+  margin-top: 50px;
+  font-size: 3.5rem;
+}
+p {
+  color: white;
+  font-size: 1.5rem;
+}
+img {
+  width: 40%;
+  height: 40%;
+  margin-top: 170px;
+  border-radius: 15%;
+}
+.logo {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.3rem;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+}
+.search input {
+  width: 300px;
+  height: 28px;
+  padding: 15px;
+  outline: none;
+  border-radius: 30px;
+  font-size: 18px;
+  border: 1px solid rgb(77, 73, 73);
+}
+.search button {
+  width: 60px;
+  height: 32px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  margin-left: -33px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(4, 77, 4);
+}
+.category {
+  width: 600px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 33px;
+}
+.category .dishes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  gap: 7px;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-in;
+}
+.dishes input {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(3, 96, 139);
+  color: white;
+  font-size: 18Spx;
+  font-weight: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.dishes input:hover {
+  background-color: #99c9d4;
+  color: black;
+}
+.category button {
+  position: relative;
+  top: 36px;
+  background-color: transparent;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+#previous {
+  padding: 12px;
+}
+
+#next {
+  margin-left: 88%;
+}
+.showRecipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+}
+.showRecipe .cardss {
+  width: 260px;
+  height: 260px;
+  background-color: #fff;
+  text-align: center;
+  margin-inline: 20px;
+  margin-top: 15px;
+  box-shadow: 1px 3px 3px 3px grey;
+}
+.cardss img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 0;
+  margin-top: 0;
+}
+.cardss h5 {
+  margin-top: 1px;
+  text-decoration: solid;
+  font-size: 17px;
+}
+.cardss button {
+  font-size: 18px;
+  
+}
+.form-label{
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardss {
+    max-width: 100%; /* Ensure the card fits within the parent container */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    margin-bottom: 20px; /* Optional: Add some space between cards */
+    overflow: hidden; /* Ensure content stays within the card */
+  }
+  
+  .content {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  
+  ul {
+    padding-left: 20px; /* Optional: Indent list items */
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul, .instructions p {
+    margin: 0; 
+    font-size: 18px;
+    color: black;
+  }
+  
+  .instructions {
+    margin-top: 10px;
+    
+  }
+  .instructions h6{
+    font-style: bold;
+    font-size: 20px;
+  }
+
+.write{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.write-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px 2px grey;
+    height: 450px;
+    width: 550px;
+}
+.write-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.write-inputs{
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-size: 20px;
+    color: black;
+    background-color: #d6f2f8;
+    border-radius: 50px;
+}
+
+.write-left textarea {
+    width: 500px;
+    height: 280px; 
+    border-radius: 20px;
+    color: black;
+    background-color: #d6f2f8;
+    padding: 15px; 
+    font-size: 18px; 
+}
+
+.write-left button{
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    margin-bottom: 18px;
+    font-size: 19px;
+    color:#fff;
+    gap: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(4, 95, 4);
+    cursor: pointer;
+
+}
+.write-right img{
+    width: 400px;
+    margin-top: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand p {
+    font-size: 30px;
+  }
+
+  .container {
+    padding-left: 20px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .search input {
+    width: 250px;
+  }
+
+  .search button {
+    width: 50px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .category {
+    width: 100%;
+    height: auto;
+  }
+
+  #next {
+    margin-left: auto;
+  }
+
+  .write {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .write-left, .write-right {
+    width: 90%;
+  }
+
+  .write-left {
+    height: auto;
+    padding: 20px;
+  }
+
+  .write-inputs, .write-left textarea {
+    width: 100%;
+  }
+
+  .write-right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 10px 5%;
+  }
+
+  .container {
+    margin-top: 100px;
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .search input {
+    width: 200px;
+  }
+
+  .search button {
+    width: 40px;
+    height: 24px;
+    font-size: 14px;
+  }
+
+  .category {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .dishes input {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .write-left {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .write-inputs, .write-left textarea {
+    width: 100%;
+  }
+
+  .write-right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand p {
+    font-size: 25px;
+  }
+
+  .container {
+    margin-top: 70px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .search input {
+    width: 150px;
+  }
+
+  .search button {
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .dishes input {
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .write-left {
+    width: 100%;
+  }
+
+  .write-inputs, .write-left textarea {
+    width: 100%;
+  }
+
+  .write-right img {
+    width: 100%;
+  }
+}
